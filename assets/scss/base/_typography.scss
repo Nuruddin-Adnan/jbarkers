@@ -1,6 +1,19 @@
-@use '../abstracts/variables';
+@font-face {
+  font-family: GothamBook;
+  src: url(../fonts/GothamBook.ttf);
+}
+
+@font-face {
+  font-family: GothamMedium;
+  src: url(../fonts/GothamMedium.ttf);
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url(../fonts//GothamBold.ttf);
+}
+
 
 body {
-  font-family: 'Poppins', sans-serif;
-  color: variables.$color-black;
+  font-family: GothamBook;
 }

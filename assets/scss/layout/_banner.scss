@@ -1,0 +1,30 @@
+.banner {
+    background: url(../images/banner-image.jpg) no-repeat center center/cover;
+    padding: 220px 0;
+    color: #fff;
+
+    @media (max-width: 991px) {
+        padding: 100px 0;
+    }
+
+    @media (max-width: 575px) {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 40px;
+
+        @media (max-width: 575px) {
+            font-size: 30px;
+        }
+
+        strong {
+            font-family: GothamBold;
+        }
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

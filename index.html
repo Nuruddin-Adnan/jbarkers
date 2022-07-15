@@ -1,78 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Your website</title>
-  <link rel='shortcut icon' href='assets/images/logo.png' type='image/x-icon'>
+  <link rel='shortcut icon' href='assets/images/favicon.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
   <!-- === header section start === -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-xl navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo.png" alt="logo" class="img-fluid">
+        </a>
 
-        <a href="#" class="btn btn-primary ms-auto d-lg-none me-2">Login</a>
+        <ul class="navbar-nav ms-auto d-xl-none d-flex">
+          <li class="nav-item">
+            <a href="#" class="nav-link we-are-hiring"><img src="assets/images/we-are-hiring.png" alt="button"
+                class="img-fluid"></a>
+          </li>
+        </ul>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-     
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
+          <ul class="navbar-nav mb-2 mb-xl-0 ms-0 ms-xl-5">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                People
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Solutions
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Markets
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Knowledge
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Firm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </li>
           </ul>
-          <a href="#" class="btn btn-primary d-none d-lg-inline-block">Login</a>
+          <ul class="navbar-nav d-xl-flex d-none">
+            <li class="nav-item">
+              <a href="#" class="nav-link we-are-hiring"><img src="assets/images/we-are-hiring.png" alt="button"
+                  class="img-fluid"></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link call-us" href="tel:03301076498">Call us now on: 0330 107 6498</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
   </header>
   <!-- ===//end of header section === -->
- 
+
 
   <!-- === banner section start === -->
-  <section class="banner py-5">
+  <section class="banner">
     <div class="container">
-     <div class="row gy-lg-0 gy-5 align-items-center">
-      <div class="col-lg-6">
-        <h1>This is banner title</h1>
-        <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur repudiandae minus ratione magnam facere ipsum quasi dolorem mollitia atque molestiae, laudantium amet soluta dignissimos alias aliquam iusto earum laborum esse.</p>
-        <a href="#" class="btn btn-lg btn-primary">Read More</a>
-      </div>
-      <div class="col-lg-6">
-        <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="banenr-image" class="img-fluid">
-      </div>
-     </div>
+      <h1>Welcome to <strong>John Barkers Solicitors</strong></h1>
+      <p class="pb-2 pt-2">Expert legal services delivered by a friendly and dedicated team</p>
+      <p class="text-blue">Jon Stones – Director</p>
     </div>
   </section>
   <!-- ===//end of banner section === -->
- 
+
+
+  <!-- === business-services section start === -->
+  <section class="business-services py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 text-section">
+          <h2 class="top-heading">Landmark £193m settlement agreed in VW emissions claim</h2>
+          <p class="service-description">We have succSSSL secured a significant financial settlement on behalf of around
+            70.000 car owners as a
+            result
+            of the collective action emissions chim we ca led against the VW Group</p>
+          <div class="d-flex rating">
+            <p>Excellent</p>
+            <div class="flex-shrink-0 mx-2 mx-md-3">
+              <img src="assets/images/business-services/star.png" alt="start" class="img-fluid">
+            </div>
+            <div class="flex-shrink-0">
+              <img src="assets/images/business-services/trustpilot.png" alt="start" class="img-fluid">
+            </div>
+          </div>
+          <a href="#" class="btn btn-lg btn-outline-blue">Find out more</a>
+        </div>
+        <div class="col-lg-6 offset-lg-1 image-section">
+          <img src="assets/images/business-services/side-image.png" alt="image" class="img-fluid w-100">
+          <div class="row">
+            <div class="col"><a href="#" class="btn btn-lg green-btn w-100">Service-1</a></div>
+            <div class="col"><a href="#" class="btn btn-lg green-btn w-100">Service-2</a></div>
+            <div class="col"><a href="#" class="btn btn-lg green-btn w-100">Service-3</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-md-4 gy-4 py-5">
+        <div class="col-lg-6">
+          <div class="services-box">
+            <h3 class="service-heading">Business Services</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="ps-0">
+                  <li><a href="#">Employment</a></li>
+                  <li><a href="#">Corporate Law</a></li>
+                  <li><a href="#">Debt Recovery</a></li>
+                  <li><a href="#">Agricultural Law</a></li>
+                  <li><a href="#">Landlord and Tenant Advice</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="ps-0">
+                  <li><a href="#">Contract Law</a></li>
+                  <li><a href="#">Dispute Resolution &amp; Litigation</a></li>
+                  <li><a href="#">Business Acquisitions and Mergers</a></li>
+                  <li><a href="#">Commercial Property Conveyancing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="services-box">
+            <h3 class="service-heading">Personal Services</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="ps-0">
+                  <li><a href="#">Conveyancing</a></li>
+                  <li><a href="#">Divorce Solicitors</a></li>
+                  <li><a href="#">Motoring Offences</a></li>
+                  <li><a href="#">Legal Aid</a></li>
+                  <li><a href="#">Social Services and Childcare</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="ps-0">
+                  <li><a href="#">Wills and Probate</a></li>
+                  <li><a href="#">Advice for older clients</a></li>
+                  <li><a href="#">Criminal Defence</a></li>
+                  <li><a href="#">Dispute resolution</a></li>
+                  <li><a href="#">Family Mediation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===//end of business-services section === -->
+
 
   <!-- === ? section start === -->
   <section class="?">
@@ -80,16 +229,16 @@
     </div>
   </section>
   <!-- ===//end of ? section === -->
- 
-  
+
+
   <!-- === footer section start === -->
   <footer>
 
   </footer>
   <!-- ===//end of footer section === -->
- 
 
- 
+
+
 
 
   <script src="assets/vendor/bootstrap/js/popper.js"></script>
@@ -97,4 +246,5 @@
   <script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
