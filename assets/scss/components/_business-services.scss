@@ -1,0 +1,84 @@
+@use '../base/variables';
+
+.business-services {
+    .text-section {
+        color: variables.$color-dark;
+
+        .top-heading {
+            font-family: GothamBold;
+            font-size: 40px;
+            font-weight: 700;
+
+            @media (min-width: 992px) {
+                white-space: pre-line;
+            }
+
+            @media (max-width: 767px) {
+                font-size: 30px;
+            }
+        }
+
+        .service-description {
+            font-size: 18px;
+            padding: 15px 0;
+        }
+
+        .rating {
+            p {
+                font-family: GothamMedium;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .services-box {
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        padding: 20px;
+        height: 100%;
+
+        .service-heading {
+            font-size: 30px;
+            color: #6F2D9D;
+            margin-bottom: 20px;
+
+            strong {
+                font-family: GothamBold;
+
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    color: variables.$color-dark;
+                    padding: 5px 0;
+
+                    &:hover {
+                        color: variables.$color-blue;
+                    }
+
+                    i {
+                        font-size: 12px;
+                        margin-top: 8px;
+                        margin-right: 10px;
+                        color: variables.$color-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .gellery-box {
+        border-radius: 20px;
+        overflow: hidden;
+
+        .text {
+            font-size: 18px;
+            background-color: #48bc99;
+            color: #fff;
+            padding: 10px 15px;
+            text-align: center;
+        }
+    }
+}
