@@ -1,0 +1,47 @@
+@use '../base/variables';
+
+.meet-experts {
+    .top-heading {
+        font-family: GothamBold;
+        font-size: 40px;
+        font-weight: 700;
+        color: variables.$color-dark;
+
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
+    }
+
+    .service-description {
+        color: variables.$color-dark;
+        font-size: 18px;
+    }
+
+    .expert-item {
+        background-color: #1e546f;
+        color: #fff;
+        height: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        display: block;
+        transition: all 0.2s linear;
+
+        &:hover {
+            background-color: lighten(#1e546f, 5);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+        }
+
+        @media (max-width: 991px) {
+            padding: 20px;
+        }
+
+        .heading {
+            font-family: GothamBold;
+            font-size: 22px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            text-decoration-color: variables.$color-blue;
+        }
+    }
+
+}

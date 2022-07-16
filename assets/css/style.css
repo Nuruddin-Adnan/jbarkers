@@ -43,6 +43,10 @@ body {
   color: #00ABEA;
 }
 
+.rounded-10 {
+  border-radius: 10px;
+}
+
 .btn-outline-blue {
   font-family: GothamMedium;
   border: 2px solid #00ABEA;
@@ -130,6 +134,112 @@ body {
   text-align: center;
 }
 
+.clients-review .clients-review-wrapper {
+  background-color: #efefef;
+  padding: 30px 20px;
+  border-radius: 20px;
+}
+@media (min-width: 992px) {
+  .clients-review .clients-review-wrapper {
+    padding: 30px 30px;
+  }
+}
+.clients-review .top-heading {
+  font-family: GothamMedium;
+  font-size: 40px;
+  color: #006084;
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .clients-review .top-heading {
+    font-size: 30px;
+  }
+}
+.clients-review .description {
+  font-size: 18px;
+  color: #006084;
+}
+.clients-review .review-item {
+  height: calc(100% - 20px);
+}
+@media (min-width: 992px) {
+  .clients-review .review-item .review-box {
+    height: inherit;
+  }
+}
+.clients-review .review-item .review-box::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: inherit;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: 1;
+}
+.clients-review .review-item .review-box .title {
+  font-family: GothamMedium;
+  font-size: 20px;
+  color: #00739e;
+  margin: 15px 0 5px 0;
+}
+.clients-review .review-item .review-box p {
+  color: #00739e;
+}
+.clients-review .review-item .reviewed-by {
+  font-family: GothamMedium;
+  font-size: 20px;
+  color: #00739e;
+  margin-top: 15px;
+}
+
+.meet-experts .top-heading {
+  font-family: GothamBold;
+  font-size: 40px;
+  font-weight: 700;
+  color: #292929;
+}
+@media (max-width: 767px) {
+  .meet-experts .top-heading {
+    font-size: 30px;
+  }
+}
+.meet-experts .service-description {
+  color: #292929;
+  font-size: 18px;
+}
+.meet-experts .expert-item {
+  background-color: #1e546f;
+  color: #fff;
+  height: 100%;
+  padding: 30px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s linear;
+}
+.meet-experts .expert-item:hover {
+  background-color: #236383;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 991px) {
+  .meet-experts .expert-item {
+    padding: 20px;
+  }
+}
+.meet-experts .expert-item .heading {
+  font-family: GothamBold;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #00ABEA;
+          text-decoration-color: #00ABEA;
+}
+
+.navbar {
+  /* ============ desktop view ============ */
+  /* ============ desktop view .end// ============ */
+}
 @media (max-width: 1199px) {
   .navbar.navbar-light .navbar-collapse {
     background-color: #00ABEA;
@@ -172,6 +282,17 @@ body {
 .navbar.navbar-light .call-us:hover {
   color: #292929;
 }
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
 
 .banner {
   background: url(../images/banner-image.jpg) no-repeat center center/cover;
@@ -204,11 +325,62 @@ body {
   font-size: 18px;
 }
 
+.footer {
+  background-color: #2e3844;
+  color: #fff;
+}
+.footer .top-nav .nav-link {
+  color: #fff;
+  font-size: 17px;
+}
+.footer .top-nav .nav-link:hover {
+  color: #00ACE7;
+}
+.footer address p {
+  font-size: 14px;
+  padding: 0 1rem;
+  color: #afafaf;
+}
+.footer .footer-description {
+  font-size: 13px;
+  padding: 1rem 1rem;
+  color: #8E8F91;
+}
+.footer .bottom-nav {
+  padding: 0 1rem;
+}
+.footer .bottom-nav .nav-link {
+  color: #fff;
+  font-size: 13px;
+  padding: 1rem 0.5rem 0 0;
+}
+.footer .bottom-nav .nav-link:hover {
+  color: #00ACE7;
+}
+.footer .social-link .nav-link {
+  width: 30px;
+  height: 30px;
+  display: block;
+  color: #ADB8C5;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ADB8C5;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: all 0.2s linear;
+}
+.footer .social-link .nav-link:hover {
+  color: #00ACE7;
+  border-color: #00ACE7;
+  transform: translateY(-2px);
+}
+
 /*=== base css start === */
 /*===// end of base css === */
 /*=== components css start === */
 /* ===// end of components css === */
 /*=== layout css start === */
-/* ===// end of layout css === */
-/*=== pages start === */
-/* ===// end of pages  === *//*# sourceMappingURL=style.css.map */
+/* ===// end of layout css === *//*# sourceMappingURL=style.css.map */

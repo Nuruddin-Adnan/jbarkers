@@ -8,6 +8,8 @@
 /*=== components css start === */
 @use 'components/buttons';
 @use 'components/business-services';
+@use 'components/clients-review';
+@use 'components/meet-experts';
 /* ===// end of components css === */
 
 
@@ -16,8 +18,3 @@
 @use 'layout/banner';
 @use 'layout/footer';
 /* ===// end of layout css === */
-
-
-/*=== pages start === */
-
-/* ===// end of pages  === */

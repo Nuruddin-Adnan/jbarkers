@@ -1,0 +1,72 @@
+@use '../base/variables';
+
+.clients-review {
+    .clients-review-wrapper {
+        background-color: #efefef;
+        padding: 30px 20px;
+        border-radius: 20px;
+
+        @media (min-width: 992px) {
+            padding: 30px 30px;
+        }
+    }
+
+    .top-heading {
+        font-family: GothamMedium;
+        font-size: 40px;
+        color: darken(variables.$color-blue, 20);
+        margin-bottom: 15px;
+
+        @media (max-width: 768px) {
+            font-size: 30px;
+        }
+    }
+
+    .description {
+        font-size: 18px;
+        color: darken(variables.$color-blue, 20);
+    }
+
+    .review-item {
+        height: calc(100% - 20px);
+
+        .review-box {
+            @media (min-width: 992px) {
+                height: inherit;
+            }
+
+            &::before {
+                content: '';
+                width: 20px;
+                height: 20px;
+                background-color: inherit;
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%) rotate(45deg);
+                z-index: 1;
+            }
+
+            .title {
+                font-family: GothamMedium;
+                font-size: 20px;
+                color: darken(variables.$color-blue, 15);
+                margin: 15px 0 5px 0;
+            }
+
+            p {
+                color: darken(variables.$color-blue, 15);
+            }
+
+        }
+
+        .reviewed-by {
+            font-family: GothamMedium;
+            font-size: 20px;
+            color: darken(variables.$color-blue, 15);
+            margin-top: 15px;
+        }
+    }
+}
+
+// color: variables.$color-dark;
