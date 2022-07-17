@@ -52,6 +52,7 @@ body {
   border: 2px solid #00ABEA;
   border-radius: 10px;
   color: #292929;
+  font-size: 1rem;
 }
 .btn-outline-blue:hover {
   background-color: #00ABEA;
@@ -63,6 +64,7 @@ body {
   border-radius: 10px;
   color: #fff;
   background-color: #48bc99;
+  font-size: 1rem;
 }
 .green-btn:hover {
   background-color: #00ABEA;
@@ -112,13 +114,13 @@ body {
 .business-services .services-box ul li a {
   color: #292929;
   padding: 5px 0;
+  align-items: baseline;
 }
 .business-services .services-box ul li a:hover {
   color: #00ABEA;
 }
 .business-services .services-box ul li a i {
   font-size: 12px;
-  margin-top: 8px;
   margin-right: 10px;
   color: #00ABEA;
 }
@@ -246,19 +248,24 @@ body {
     padding: 15px;
   }
 }
+.navbar.navbar-light .navbar-brand {
+  max-width: 220px;
+}
 @media (max-width: 1400px) {
   .navbar.navbar-light .navbar-brand {
-    max-width: 200px;
+    max-width: 160px;
   }
 }
 @media (max-width: 575px) {
   .navbar.navbar-light .navbar-brand {
-    max-width: 180px;
+    max-width: 140px;
   }
 }
 .navbar.navbar-light .nav-link {
   font-family: GothamMedium;
   color: #292929;
+  font-size: 15px;
+  white-space: nowrap;
 }
 .navbar.navbar-light .nav-link:hover {
   color: #00ABEA;
@@ -271,13 +278,16 @@ body {
     color: #292929;
   }
 }
+.navbar.navbar-light .dropdown-menu .dropdown-item {
+  font-size: 14px;
+}
 .navbar.navbar-light .we-are-hiring img {
-  max-width: 80px;
+  max-width: 60px;
   margin-right: 10px;
 }
 .navbar.navbar-light .call-us {
   font-family: GothamBold;
-  font-size: 20px;
+  font-size: 18px;
 }
 .navbar.navbar-light .call-us:hover {
   color: #292929;
