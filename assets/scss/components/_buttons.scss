@@ -6,6 +6,7 @@
     border-radius: 10px;
     color: variables.$color-dark;
     font-size: 1rem;
+    vertical-align: middle;
 
     &:hover {
         background-color: variables.$color-blue;
@@ -19,6 +20,7 @@
     color: #fff;
     background-color: #48bc99;
     font-size: 1rem;
+    vertical-align: middle;
 
     &:hover {
         background-color: variables.$color-blue;
