@@ -1,6 +1,9 @@
 @use '../base/variables';
 
 .navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
     &.navbar-light {
 
         @media (max-width: 1199px) {

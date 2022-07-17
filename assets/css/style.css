@@ -241,6 +241,8 @@ body {
 }
 
 .navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   /* ============ desktop view ============ */
   /* ============ desktop view .end// ============ */
 }
